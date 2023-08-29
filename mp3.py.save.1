@@ -10,7 +10,7 @@ class Playlist:
 
 	def getSonglist(self, filename):
 		with open(filename) as fhand:
-			self.songlist = [line.rstrip().split()[1] for line in fhand]
+			self.songlist = [line.rstrip(). for line in fhand]
 		for index, song in enumerate(self.songlist):
 			print(f"{index}. {song}")
 
